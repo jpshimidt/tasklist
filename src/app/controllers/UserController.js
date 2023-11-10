@@ -1,4 +1,4 @@
-import User from "../models/User";
+import User from '../models/User';
 
 class UserController {
   async store(req, res) {
@@ -7,7 +7,7 @@ class UserController {
     });
 
     if (userExists) {
-      return res.status(400).json({ error: "Usuário já existe" });
+      return res.status(400).json({ error: 'Usuário já existe' });
     }
 
     const { id, name, email } = await User.create(req.body);

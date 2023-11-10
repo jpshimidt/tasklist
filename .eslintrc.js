@@ -3,29 +3,29 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ["airbnb-base", "prettier"],
-  plugins: ["prettier"],
+  extends: ['airbnb-base', 'prettier'],
+  plugins: ['prettier'],
   overrides: [
     {
       env: {
         node: true,
       },
-      files: [".eslintrc.{js,cjs}"],
+      files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
-        sourceType: "script",
+        sourceType: 'script',
       },
     },
   ],
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
   rules: {
-    "prettier/prettier": "error",
-    "class-methods-use-this": "off",
-    "no-param-reassing": "off",
-    camelcase: "off",
-    "no-underscore_dangle": "off",
-    "no-unused-vars": ["error", { argsIgnorePattern: "next" }],
+    'prettier/prettier': 'error',
+    'class-methods-use-this': 'off',
+    'no-param-reassing': 'off',
+    camelcase: 'off',
+    'no-underscore_dangle': 'off',
+    'no-unused-vars': ['error', { argsIgnorePattern: 'next' }],
   },
 };
